@@ -6,7 +6,7 @@
         <component :is="`day${currentDay}`" />
       </transition>
     </frame-el>
-    <h3>Current Day: {{ currentDay }}</h3>
+    <h3>Day: {{ currentDay }}</h3>
     <div
       class="home-page__links"
       :class="{ 'home-page__links_once': isFirstDay }"
