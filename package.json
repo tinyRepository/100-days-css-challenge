@@ -32,7 +32,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project dist --domain 100-days-css-challenge.surge.sh"
+      "post-merge": "surge --project dist --domain 100-days-css-challenge.surge.sh"
     }
   }
 }
