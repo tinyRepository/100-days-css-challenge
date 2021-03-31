@@ -32,7 +32,7 @@
   },
   "git": {
     "scripts": {
-      "post-merge": "surge --project dist --domain 100-days-css-challenge.surge.sh"
+      "post-merge": "yarn build && surge --project dist --domain 100-days-css-challenge.surge.sh"
     }
   }
 }
