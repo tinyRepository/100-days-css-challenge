@@ -76,6 +76,7 @@
     color: #786450;
     border: 1px solid #786450;
     margin-bottom: 10px;
+    transition: 0.6s background, 0.6s color;
 
     &:hover {
       color: #fff;
@@ -157,6 +158,7 @@
     justify-content: center;
     height: 100%;
     cursor: pointer;
+    transition: 0.3s background;
 
     &:not(:last-child) {
       border-bottom: 1px solid #fff;

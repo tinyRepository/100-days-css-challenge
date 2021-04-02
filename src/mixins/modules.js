@@ -3,6 +3,7 @@ import day2 from '@/components/Days/day2';
 import day3 from '@/components/Days/day3';
 import day4 from '@/components/Days/day4';
 import day5 from '@/components/Days/day5';
+import day6 from '@/components/Days/day6';
 
 export default {
   components: {
@@ -11,5 +12,6 @@ export default {
     day3,
     day4,
     day5,
+    day6,
   },
 };
