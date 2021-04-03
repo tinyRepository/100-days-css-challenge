@@ -44,11 +44,11 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: Install surge global
-        run: npm install -g surge
-
       - name: Build project 👀
         run: yarn build
+
+      - name: Install surge global
+        run: npm install -g surge
 
       - name: Deploy to surge
         run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
