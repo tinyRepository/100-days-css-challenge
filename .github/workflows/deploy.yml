@@ -45,8 +45,8 @@ jobs:
         run: yarn
 
       - name: Build project 👀
-      - run: yarn global add surge
-      - run: yarn build
+        run: yarn global add surge
+        run: yarn build
 
       - name: Deploy to surge
         run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
