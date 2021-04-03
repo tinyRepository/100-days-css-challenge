@@ -41,11 +41,25 @@ export default {
     isFirstDay() {
       return this.currentDay == 1;
     },
+    countDays() {
+      const days = require.context('@/components/Days', true, /^.*\.vue$/);
+      return days.keys().length;
+    },
   },
-  created() {
-    if (!this.currentDay) {
+  methods: {
+    goToStartPage() {
       this.$router.replace('/1');
-    }
+    },
+  },
+  watch: {
+    '$route.params.day': {
+      handler(day) {
+        if (day > this.countDays || isNaN(day)) {
+          this.goToStartPage();
+        }
+      },
+      immediate: true,
+    },
   },
 };
 </script>
