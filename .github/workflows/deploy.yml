@@ -44,8 +44,10 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: Build project 👀
+      - name: Install surge global
         run: yarn global add surge
+
+      - name: Build project 👀
         run: yarn build
 
       - name: Deploy to surge
