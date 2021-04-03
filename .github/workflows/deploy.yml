@@ -45,7 +45,7 @@ jobs:
         run: yarn
 
       - name: Install surge global
-        run: yarn global add surge
+        run: npm install -g surge
 
       - name: Build project 👀
         run: yarn build
