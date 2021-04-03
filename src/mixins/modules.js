@@ -4,6 +4,7 @@ import day3 from '@/components/Days/day3';
 import day4 from '@/components/Days/day4';
 import day5 from '@/components/Days/day5';
 import day6 from '@/components/Days/day6';
+import day7 from '@/components/Days/day7';
 
 export default {
   components: {
@@ -13,5 +14,6 @@ export default {
     day4,
     day5,
     day6,
+    day7,
   },
 };
