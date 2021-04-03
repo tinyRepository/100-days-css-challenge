@@ -48,7 +48,7 @@ jobs:
         run: yarn build
 
       - name: Install surge global
-        run: yarn global surge
+        run: yarn add global surge
 
       - name: Deploy to surge
         run: surge --project dist --domain 100-days-css-challenge.surge.sh
