@@ -169,6 +169,7 @@ export default {
   z-index: 1;
   top: 42px;
   left: 10px;
+  width: 100%;
 
   polyline {
     stroke: #fa7373;
@@ -183,6 +184,7 @@ export default {
   z-index: 1;
   top: 42px;
   left: 10px;
+  width: 100%;
 
   polyline {
     stroke: #7ba2ff;
