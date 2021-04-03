@@ -47,8 +47,9 @@ jobs:
       - name: Build project 👀
         run: yarn build
 
-      - name: Install surge global
-        run: yarn add global surge
-
-      - name: Deploy to surge
-        run: surge --project dist --domain 100-days-css-challenge.surge.sh
+      - name: Install surge and fire deployment
+        uses: actions/setup-node@v1
+        with:
+          node-version: 8
+      - run: npm install -g surge
+      - run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
